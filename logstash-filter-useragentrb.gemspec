@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name          = 'logstash-filter-useragentrb'
   s.version       = '0.1.0'
-  s.licenses      = ['Apache-2.0']
-  s.summary       = 'TODO: Write a short summary, because Rubygems requires one.'
-  s.description   = 'TODO: Write a longer description or delete this line.'
-  s.homepage      = 'TODO: Put your plugin''s website or public repo URL here.'
+  s.licenses      = ['MIT']
+  s.summary       = 'A pure ruby logstash filter for parsing user agent strings.'
+  # s.description   = 'TODO: Write a longer description or delete this line.'
+  s.homepage      = 'https://github.com/mcneel/logstash-filter-useragentrb'
   s.authors       = ['Will Pearson']
   s.email         = 'will@mcneel.com'
   s.require_paths = ['lib']
@@ -19,5 +19,6 @@ Gem::Specification.new do |s|
 
   # Gem dependencies
   s.add_runtime_dependency "logstash-core-plugin-api", "~> 2.0"
+  s.add_runtime_dependency "user_agent_parser"
   s.add_development_dependency 'logstash-devutils'
 end
